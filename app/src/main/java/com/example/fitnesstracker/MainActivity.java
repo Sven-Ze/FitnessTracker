@@ -31,10 +31,6 @@ public class MainActivity extends AppCompatActivity {
                     new HomeFragment()).commit();
         }
 
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new HomeFragment()).commit();
-
     }
 
 

@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:fontFamily="@font/roboto_medium"
-        android:text="Home Fragment"
+        android:text="Fitness Tracker"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:textStyle="bold"
