@@ -2,4 +2,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_selected="true" android:color="#000000"/>
     <item android:state_selected="false" android:color="#FFFFFF"/>
+    <item android:state_active="true" android:color="#FFFFFF"/>
 </selector>
