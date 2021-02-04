@@ -10,7 +10,11 @@ import androidx.camera.core.Preview;
 import androidx.camera.core.PreviewConfig;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Matrix;
 import android.os.Bundle;
@@ -21,6 +25,8 @@ import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -43,6 +49,8 @@ public class CameraActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        ImageButton imageButton = findViewById(R.id.imageButton2);
+        imageButton.bringToFront();
         textureView = (TextureView) findViewById(R.id.textureView);
 
         //Berechtigungen Prüfen
@@ -101,13 +109,17 @@ public class CameraActivity extends AppCompatActivity {
 
                 File file = new File( getExternalFilesDir("/storage/emulated/0/Pictures/"), System.currentTimeMillis() +".jpg");
 
-
                 imgCap.takePicture(file, new ImageCapture.OnImageSavedListener() {
                     @Override
                     public void onImageSaved(@NonNull File file) {
 
                         String msg= "Pic captured at " + file.getAbsolutePath();
                         Toast.makeText(getBaseContext(), msg, Toast.LENGTH_LONG).show();
+
+                        Intent myIntent = new Intent(CameraActivity.this, MainActivity.class);
+                        myIntent.putExtra("dateinameBild", file.getAbsolutePath());
+                        CameraActivity.this.startActivity(myIntent);
+
                     }
 
                     @Override
@@ -126,6 +138,7 @@ public class CameraActivity extends AppCompatActivity {
         CameraX.bindToLifecycle(this, preview, imgCap);
 
     }
+
 
     private void updateTransform() {
         Matrix mx = new Matrix();

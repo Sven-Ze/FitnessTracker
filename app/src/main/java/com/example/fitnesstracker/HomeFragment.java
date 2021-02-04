@@ -21,9 +21,10 @@ public class HomeFragment extends Fragment {
         btnFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentTransaction fr = getFragmentManager().beginTransaction();
-                fr.replace(R.id.fragment_container, new HinzufuegenFragment());
-                fr.commit();
+                HinzufuegenFragment fragInfo = new  HinzufuegenFragment();
+                FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, fragInfo);
+                transaction.commit();
 
             }
         });
