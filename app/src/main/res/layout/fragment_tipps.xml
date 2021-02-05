@@ -15,6 +15,7 @@
         android:layout_marginTop="144dp"
         android:text="Tipp 3 - Vergesse das Aufwärmen nicht!"
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,6 +27,7 @@
         android:layout_marginTop="116dp"
         android:text="Tipp 2 - Geduld und Konsequenz!"
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,6 +39,7 @@
         android:layout_marginTop="220dp"
         android:text="Tipp #5 - Achte auf genug Regeneration und Erholung!"
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,6 +51,7 @@
         android:layout_marginTop="300dp"
         android:text="Tipp #7 - Erstelle Dir einen Trainingsplan!"
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,6 +63,7 @@
         android:layout_marginTop="328dp"
         android:text="Tipp #8 - Der richtige Wiederholungsbereich!"
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,6 +75,7 @@
         android:layout_marginTop="272dp"
         android:text="Tipp #6 - Achte stets auf Deine Ernährung!"
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,7 +85,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="92dp"
+        android:shadowColor="#FFFFFF"
         android:text="Tipp 1 - Schlafe genug!"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -92,6 +101,7 @@
         android:layout_marginTop="388dp"
         android:text="Tipp #10 - Absolviere Grundübungen und Verbundübungen! "
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -103,6 +113,7 @@
         android:layout_marginTop="356dp"
         android:text="Tipp #9 - Alkohol vermeiden! "
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -114,6 +125,7 @@
         android:layout_marginTop="172dp"
         android:text="Tipp 4 - Die richtigen Muskelgruppen zu Beginn trainieren! "
         android:textSize="18sp"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,6 +137,7 @@
         android:layout_marginTop="36dp"
         android:text="Tipps für Fitness-Einsteiger "
         android:textSize="24sp"
+        android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

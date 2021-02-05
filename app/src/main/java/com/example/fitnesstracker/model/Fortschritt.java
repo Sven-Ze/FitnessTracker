@@ -6,6 +6,22 @@ public class Fortschritt extends SugarRecord {
     String pathToPicture;
     String date;
 
+    public String getPathToPicture() {
+        return pathToPicture;
+    }
+
+    public void setPathToPicture(String pathToPicture) {
+        this.pathToPicture = pathToPicture;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public Fortschritt() {
     }
 

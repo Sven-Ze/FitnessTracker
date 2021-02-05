@@ -194,6 +194,7 @@
             android:layout_height="47dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="132dp"
+            android:src="@drawable/icon_camera"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
